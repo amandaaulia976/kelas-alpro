@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    // Mendefinisikan variabel untuk biaya hidup
+    float biaya_makan, biaya_sewa, biaya_transportasi, total_biaya;
+
+    // Menginputkan biaya hidup dari pengguna
+    printf("Masukkan biaya makan per bulan: ");
+    scanf("%f", &biaya_makan);
+
+    printf("Masukkan biaya sewa per bulan: ");
+    scanf("%f", &biaya_sewa);
+
+    printf("Masukkan biaya transportasi per bulan: ");
+    scanf("%f", &biaya_transportasi);
+
+    // Menghitung total biaya hidup
+    total_biaya = biaya_makan + biaya_sewa + biaya_transportasi;
+
+    // Menampilkan hasil
+    printf("\n=== Rincian Biaya Hidup ===\n");
+    printf("Biaya Makan: %.2f\n", biaya_makan);
+    printf("Biaya Sewa: %.2f\n", biaya_sewa);
+    printf("Biaya Transportasi: %.2f\n", biaya_transportasi);
+    printf("--------------------------\n");
+    printf("Total Biaya Hidup: %.2f\n", total_biaya);
+
+    return 0;
+}
